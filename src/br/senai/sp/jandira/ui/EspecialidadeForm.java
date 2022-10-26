@@ -61,6 +61,7 @@ public class EspecialidadeForm extends javax.swing.JDialog {
         textFieldCodigo = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(null);
 
         buttonGravar.setBackground(new java.awt.Color(0, 204, 51));
@@ -102,14 +103,14 @@ public class EspecialidadeForm extends javax.swing.JDialog {
         getContentPane().add(buttonCancelar);
         buttonCancelar.setBounds(600, 360, 140, 40);
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Detalhes da especialidade:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Fira Sans", 0, 13), new java.awt.Color(153, 0, 0))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Detalhes da especialidade:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Helvetica Neue", 0, 13), new java.awt.Color(153, 0, 0))); // NOI18N
         jPanel2.setLayout(null);
 
         labelNome.setText("Nome da especialidade:");
         jPanel2.add(labelNome);
         labelNome.setBounds(20, 110, 260, 17);
         jPanel2.add(textFieldNome);
-        textFieldNome.setBounds(20, 130, 690, 23);
+        textFieldNome.setBounds(20, 130, 690, 30);
 
         labelDescricao.setText("Descrição da especialidade:");
         jPanel2.add(labelDescricao);
@@ -126,7 +127,7 @@ public class EspecialidadeForm extends javax.swing.JDialog {
         textFieldCodigo.setFont(new java.awt.Font("Fira Sans", 1, 18)); // NOI18N
         textFieldCodigo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel2.add(textFieldCodigo);
-        textFieldCodigo.setBounds(20, 60, 64, 30);
+        textFieldCodigo.setBounds(20, 60, 80, 30);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(10, 50, 730, 290);

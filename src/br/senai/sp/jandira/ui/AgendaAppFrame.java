@@ -52,6 +52,7 @@ public class AgendaAppFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Agenda de consultas");
         setPreferredSize(new java.awt.Dimension(935, 500));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         panelTitulo.setBackground(new java.awt.Color(153, 0, 102));
@@ -121,12 +122,12 @@ public class AgendaAppFrame extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Fira Sans", 1, 13)); // NOI18N
         jLabel3.setText("Telefone:");
         panelHome.add(jLabel3);
-        jLabel3.setBounds(30, 270, 100, 17);
+        jLabel3.setBounds(30, 270, 100, 16);
 
         jLabel4.setFont(new java.awt.Font("Fira Sans", 1, 13)); // NOI18N
         jLabel4.setText("E-mail:");
         panelHome.add(jLabel4);
-        jLabel4.setBounds(30, 240, 44, 17);
+        jLabel4.setBounds(30, 240, 44, 16);
 
         jLabel5.setText("+55 (11)96636-9966");
         panelHome.add(jLabel5);
