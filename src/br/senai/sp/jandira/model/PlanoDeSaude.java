@@ -40,7 +40,5 @@ public class PlanoDeSaude {
 	public void setValidade(LocalDate validade) {
 		this.validade = validade;
 	}
-	
-	
 
 }

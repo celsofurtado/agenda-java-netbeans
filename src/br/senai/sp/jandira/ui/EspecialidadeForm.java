@@ -9,6 +9,7 @@ public class EspecialidadeForm extends javax.swing.JDialog {
     
     private Especialidade especialidade;
     private Operacoes operacao;
+    private EspecialidadeDAO dao = new EspecialidadeDAO();
 
     public EspecialidadeForm(java.awt.Frame parent, boolean modal, Operacoes operacao) {
         
@@ -144,10 +145,10 @@ public class EspecialidadeForm extends javax.swing.JDialog {
         
         if(operacao == Operacoes.EDITAR) {
             e.setCodigo(this.especialidade.getCodigo());
-            EspecialidadeDAO.atualizar(e);
+            dao.atualizar(e);
             mensagem = "Especialidade atualizada com sucesso!";
         } else {
-            EspecialidadeDAO.gravar(e);
+            dao.gravar(e);
             mensagem = "Especialidade criada com sucesso!";
         }
         

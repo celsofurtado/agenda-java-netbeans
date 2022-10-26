@@ -65,7 +65,7 @@ public class AgendaAppFrame extends javax.swing.JFrame {
         labelTitulo.setForeground(new java.awt.Color(255, 255, 255));
         labelTitulo.setText("Agenda de Consultas");
         panelTitulo.add(labelTitulo);
-        labelTitulo.setBounds(80, 30, 410, 30);
+        labelTitulo.setBounds(80, 10, 410, 60);
 
         getContentPane().add(panelTitulo);
         panelTitulo.setBounds(0, 0, 940, 80);
@@ -80,7 +80,6 @@ public class AgendaAppFrame extends javax.swing.JFrame {
         buttonSair.setBounds(790, 100, 110, 60);
 
         buttonAgenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/senai/sp/jandira/images/schedule.png"))); // NOI18N
-        buttonAgenda.setText("");
         getContentPane().add(buttonAgenda);
         buttonAgenda.setBounds(150, 100, 110, 60);
 
@@ -165,7 +164,17 @@ public class AgendaAppFrame extends javax.swing.JFrame {
 
     private void buttonSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSairActionPerformed
 
-        int resposta = JOptionPane.showConfirmDialog(this, "Confirma a saída do sistema?", "Sair do sistema", JOptionPane.YES_NO_OPTION);
+        String[] options = {"Sim! Por favor.", "Não, agora não."};
+        
+        int resposta = JOptionPane.showOptionDialog(
+                this, 
+                "Você deseja realmente sair?", 
+                "Agenda", 
+                JOptionPane.YES_NO_OPTION, 
+                JOptionPane.QUESTION_MESSAGE, 
+                null,
+                options, 
+                options[1]);
 
         if(resposta == 0) {
             System.exit(0);
